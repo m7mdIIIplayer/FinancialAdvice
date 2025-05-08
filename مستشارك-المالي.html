@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المستشار المالي - استشارات مالية موثوقة</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#1A365D',secondary:'#4A4A4A'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .hero-section {
+            background-image: linear-gradient(to left, rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.7), rgba(255, 255, 255, 0.9)), url('https://readdy.ai/api/search-image?query=professional%20financial%20advisor%20office%20with%20modern%20design%2C%20blue%20tones%2C%20elegant%20workspace%20with%20city%20view%2C%20financial%20charts%20on%20screens%2C%20clean%20and%20minimal%20design%2C%20soft%20lighting%2C%20professional%20atmosphere%2C%20high-end%20office%20furniture%2C%20glass%20walls%2C%20panoramic%20view&width=1920&height=1080&seq=1&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #1A365D;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .custom-checkbox {
+            position: relative;
+            padding-right: 30px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .custom-checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        .checkmark {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #fff;
+            border: 2px solid #1A365D;
+            border-radius: 4px;
+        }
+        .custom-checkbox input:checked ~ .checkmark {
+            background-color: #1A365D;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        .custom-checkbox input:checked ~ .checkmark:after {
+            display: block;
+        }
+        .custom-checkbox .checkmark:after {
+            left: 6px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        .custom-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+        .custom-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #1A365D;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        .tab-active {
+            color: #1A365D;
+            border-bottom: 2px solid #1A365D;
+        }
+        .testimonial-slider {
+            overflow-x: hidden;
+            position: relative;
+        }
+        .testimonial-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .testimonial-item {
+            flex: 0 0 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+            </div>
+            <nav class="hidden md:flex items-center space-x-1 space-x-reverse">
+                <a href="#" class="px-4 py-2 font-medium text-primary hover:text-opacity-80">الرئيسية</a>
+                <a href="#about" class="px-4 py-2 font-medium text-gray-700 hover:text-primary">من نحن</a>
+                <a href="#services" class="px-4 py-2 font-medium text-gray-700 hover:text-primary">خدماتنا</a>
+                <a href="#booking" class="px-4 py-2 font-medium text-gray-700 hover:text-primary">حجز موعد</a>
+                <a href="#blog" class="px-4 py-2 font-medium text-gray-700 hover:text-primary">المدونة</a>
+                <a href="#contact" class="px-4 py-2 font-medium text-gray-700 hover:text-primary">اتصل بنا</a>
+            </nav>
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <a href="#booking" class="hidden md:block bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">احجز استشارة</a>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700" id="mobile-menu-button">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col">
+                <a href="#" class="py-3 border-b border-gray-100 font-medium text-primary">الرئيسية</a>
+                <a href="#about" class="py-3 border-b border-gray-100 font-medium text-gray-700">من نحن</a>
+                <a href="#services" class="py-3 border-b border-gray-100 font-medium text-gray-700">خدماتنا</a>
+                <a href="#booking" class="py-3 border-b border-gray-100 font-medium text-gray-700">حجز موعد</a>
+                <a href="#blog" class="py-3 border-b border-gray-100 font-medium text-gray-700">المدونة</a>
+                <a href="#contact" class="py-3 font-medium text-gray-700">اتصل بنا</a>
+                <a href="#booking" class="mt-4 bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 text-center whitespace-nowrap">احجز استشارة</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section w-full">
+        <div class="container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 text-white mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">استشارات مالية احترافية لمستقبل آمن</h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90">نساعدك على تحقيق أهدافك المالية من خلال استشارات مخصصة وحلول مبتكرة تناسب احتياجاتك الشخصية والتجارية.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#booking" class="bg-white text-primary px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 text-center whitespace-nowrap">احجز استشارتك الآن</a>
+                    <a href="#services" class="border-2 border-white text-white px-8 py-3 !rounded-button font-medium hover:bg-white hover:bg-opacity-10 transition duration-300 text-center whitespace-nowrap">تعرف على خدماتنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">لماذا تختار المستشار المالي؟</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نقدم لك خبرة أكثر من 15 عامًا في مجال الاستشارات المالية مع فريق من المستشارين المعتمدين لمساعدتك على تحقيق أهدافك المالية.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded shadow-sm text-center transition duration-300 hover:shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+                        <i class="ri-shield-check-line ri-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">خبرة موثوقة</h3>
+                    <p class="text-gray-600">فريق من المستشارين الماليين المعتمدين بخبرة تزيد عن 15 عامًا في السوق المالي.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded shadow-sm text-center transition duration-300 hover:shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+                        <i class="ri-user-settings-line ri-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">حلول مخصصة</h3>
+                    <p class="text-gray-600">نصمم خطط مالية تناسب احتياجاتك الشخصية وأهدافك المستقبلية بشكل فردي.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded shadow-sm text-center transition duration-300 hover:shadow">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mx-auto mb-4">
+                        <i class="ri-customer-service-2-line ri-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">دعم مستمر</h3>
+                    <p class="text-gray-600">نقدم متابعة دورية لخطتك المالية مع إمكانية التواصل المباشر مع مستشارك الخاص.</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div>
+                        <h4 class="text-4xl font-bold text-primary mb-2">1500+</h4>
+                        <p class="text-gray-600">عميل راضٍ</p>
+                    </div>
+                    <div>
+                        <h4 class="text-4xl font-bold text-primary mb-2">25+</h4>
+                        <p class="text-gray-600">مستشار مالي</p>
+                    </div>
+                    <div>
+                        <h4 class="text-4xl font-bold text-primary mb-2">95%</h4>
+                        <p class="text-gray-600">نسبة رضا العملاء</p>
+                    </div>
+                    <div>
+                        <h4 class="text-4xl font-bold text-primary mb-2">10+</h4>
+                        <p class="text-gray-600">جوائز تميز</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20financial%20team%20in%20a%20modern%20office%2C%20diverse%20group%20of%20Arab%20financial%20advisors%20in%20business%20attire%2C%20discussing%20strategy%2C%20looking%20at%20financial%20charts%2C%20professional%20setting%2C%20modern%20office%20with%20Arabic%20elements%2C%20high-quality%20professional%20photography&width=600&height=400&seq=2&orientation=landscape" alt="فريق المستشار المالي" class="rounded shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-primary mb-6">من نحن</h2>
+                    <p class="text-gray-700 mb-4">المستشار المالي هي شركة استشارات مالية رائدة تأسست عام 2010 بهدف تقديم خدمات مالية متكاملة للأفراد والشركات في المنطقة العربية.</p>
+                    <p class="text-gray-700 mb-4">نؤمن بأن النجاح المالي يبدأ بالتخطيط السليم والاستراتيجيات المدروسة، ولذلك نحرص على تقديم حلول مالية مبتكرة تناسب احتياجات كل عميل.</p>
+                    <p class="text-gray-700 mb-6">يضم فريقنا نخبة من المستشارين الماليين المعتمدين والخبراء في مجالات متعددة مثل التخطيط المالي، الاستثمار، التقاعد، والتأمين، مما يضمن تقديم خدمات شاملة ومتكاملة.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#team" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 text-center whitespace-nowrap">تعرف على فريقنا</a>
+                        <a href="#contact" class="border border-primary text-primary px-6 py-3 !rounded-button font-medium hover:bg-primary hover:bg-opacity-10 transition duration-300 text-center whitespace-nowrap">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">فريقنا المتميز</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">يضم فريقنا نخبة من المستشارين الماليين ذوي الخبرة والكفاءة العالية، حاصلين على شهادات معتمدة دوليًا.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 rounded overflow-hidden shadow-sm transition duration-300 hover:shadow">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20male%20financial%20advisor%20in%20business%20suit%2C%20confident%20pose%2C%20professional%20headshot%2C%20neutral%20background%2C%20high%20quality%20portrait&width=400&height=400&seq=3&orientation=squarish" alt="د. أحمد العمري" class="w-full h-64 object-cover object-top">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-1">د. أحمد العمري</h3>
+                        <p class="text-primary mb-3">المدير التنفيذي</p>
+                        <p class="text-gray-600 text-sm mb-4">خبرة 20 عامًا في الاستشارات المالية والاستثمارية، حاصل على دكتوراه في الاقتصاد من جامعة هارفارد.</p>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-mail-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded overflow-hidden shadow-sm transition duration-300 hover:shadow">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20female%20financial%20advisor%20in%20business%20attire%2C%20confident%20pose%2C%20professional%20headshot%2C%20neutral%20background%2C%20high%20quality%20portrait&width=400&height=400&seq=4&orientation=squarish" alt="م. سارة الحميد" class="w-full h-64 object-cover object-top">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-1">م. سارة الحميد</h3>
+                        <p class="text-primary mb-3">رئيس قسم الاستثمار</p>
+                        <p class="text-gray-600 text-sm mb-4">محللة مالية معتمدة مع خبرة 15 عامًا في أسواق المال، متخصصة في إدارة المحافظ الاستثمارية.</p>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-mail-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded overflow-hidden shadow-sm transition duration-300 hover:shadow">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20male%20financial%20advisor%20in%20business%20suit%2C%20confident%20pose%2C%20professional%20headshot%2C%20neutral%20background%2C%20high%20quality%20portrait&width=400&height=400&seq=5&orientation=squarish" alt="أ. محمد القحطاني" class="w-full h-64 object-cover object-top">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-1">أ. محمد القحطاني</h3>
+                        <p class="text-primary mb-3">مستشار التخطيط المالي</p>
+                        <p class="text-gray-600 text-sm mb-4">مخطط مالي معتمد مع خبرة 12 عامًا في مجال التخطيط المالي الشخصي وإدارة الثروات.</p>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-mail-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded overflow-hidden shadow-sm transition duration-300 hover:shadow">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20female%20financial%20advisor%20in%20business%20attire%2C%20confident%20pose%2C%20professional%20headshot%2C%20neutral%20background%2C%20high%20quality%20portrait&width=400&height=400&seq=6&orientation=squarish" alt="د. نورة السالم" class="w-full h-64 object-cover object-top">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-1">د. نورة السالم</h3>
+                        <p class="text-primary mb-3">مستشار الشركات</p>
+                        <p class="text-gray-600 text-sm mb-4">متخصصة في تمويل الشركات والاستشارات المالية للمؤسسات، حاصلة على شهادة CFA المستوى الثالث.</p>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="#" class="w-8 h-8 flex items-center justify-center text-primary hover:text-opacity-80">
+                                <i class="ri-mail-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">خدماتنا المتميزة</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نقدم مجموعة متكاملة من الخدمات المالية المصممة خصيصًا لتلبية احتياجاتك وتحقيق أهدافك المالية.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-6 rounded shadow-sm transition duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-5">
+                        <i class="ri-line-chart-line ri-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">التخطيط المالي الشخصي</h3>
+                    <p class="text-gray-600 mb-5">نساعدك على وضع خطة مالية شاملة تتضمن تحديد الأهداف، إعداد الميزانية، وإدارة التدفقات النقدية لتحقيق الاستقرار المالي.</p>
+                    <a href="#booking" class="inline-flex items-center text-primary font-medium hover:underline">
+                        احجز استشارة
+                        <i class="ri-arrow-left-line mr-1"></i>
+                    </a>
+                </div>
+                <div class="service-card bg-white p-6 rounded shadow-sm transition duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-5">
+                        <i class="ri-funds-box-line ri-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">استشارات استثمارية</h3>
+                    <p class="text-gray-600 mb-5">نقدم استشارات متخصصة في مجال الاستثمار، مع تحليل الفرص الاستثمارية وبناء محافظ استثمارية متنوعة تناسب مستوى المخاطرة المقبول لديك.</p>
+                    <a href="#booking" class="inline-flex items-center text-primary font-medium hover:underline">
+                        احجز استشارة
+                        <i class="ri-arrow-left-line mr-1"></i>
+                    </a>
+                </div>
+                <div class="service-card bg-white p-6 rounded shadow-sm transition duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-5">
+                        <i class="ri-bank-card-line ri-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">إدارة الديون</h3>
+                    <p class="text-gray-600 mb-5">نساعدك على وضع استراتيجيات فعالة لإدارة وسداد الديون، وتحسين التصنيف الائتماني، والتخطيط للاقتراض المستقبلي بشكل مدروس.</p>
+                    <a href="#booking" class="inline-flex items-center text-primary font-medium hover:underline">
+                        احجز استشارة
+                        <i class="ri-arrow-left-line mr-1"></i>
+                    </a>
+                </div>
+                <div class="service-card bg-white p-6 rounded shadow-sm transition duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-5">
+                        <i class="ri-building-4-line ri-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">استشارات الشركات</h3>
+                    <p class="text-gray-600 mb-5">نقدم خدمات استشارية للشركات الناشئة والقائمة في مجالات التمويل، إعداد خطط العمل، تقييم المشاريع، وتحليل المخاطر المالية.</p>
+                    <a href="#booking" class="inline-flex items-center text-primary font-medium hover:underline">
+                        احجز استشارة
+                        <i class="ri-arrow-left-line mr-1"></i>
+                    </a>
+                </div>
+                <div class="service-card bg-white p-6 rounded shadow-sm transition duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-5">
+                        <i class="ri-hand-coin-line ri-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">التخطيط للتقاعد</h3>
+                    <p class="text-gray-600 mb-5">نساعدك على بناء خطة تقاعد مناسبة تضمن لك الاستقرار المالي في المستقبل، مع تحديد مبلغ الادخار المطلوب وأفضل أدوات الاستثمار.</p>
+                    <a href="#booking" class="inline-flex items-center text-primary font-medium hover:underline">
+                        احجز استشارة
+                        <i class="ri-arrow-left-line mr-1"></i>
+                    </a>
+                </div>
+                <div class="service-card bg-white p-6 rounded shadow-sm transition duration-300">
+                    <div class="w-14 h-14 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-5">
+                        <i class="ri-safe-2-line ri-xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">التخطيط العقاري والميراث</h3>
+                    <p class="text-gray-600 mb-5">نقدم استشارات في مجال التخطيط العقاري وإدارة الثروات وانتقالها بين الأجيال، بما يضمن حماية أصولك وتوزيعها وفق رغباتك.</p>
+                    <a href="#booking" class="inline-flex items-center text-primary font-medium hover:underline">
+                        احجز استشارة
+                        <i class="ri-arrow-left-line mr-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">آراء عملائنا</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نفتخر بثقة عملائنا ونسعى دائمًا لتقديم خدمات تفوق توقعاتهم.</p>
+            </div>
+            <div class="testimonial-slider relative">
+                <div class="testimonial-track">
+                    <div class="testimonial-item px-4">
+                        <div class="bg-gray-50 p-8 rounded shadow-sm">
+                            <div class="flex items-center mb-4">
+                                <div class="text-primary">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">"تعاملت مع المستشار المالي لوضع خطة استثمارية طويلة المدى. كانت الاستشارة احترافية ومفيدة جدًا، وساعدتني على فهم خيارات الاستثمار المتاحة واختيار ما يناسب أهدافي. أنصح بهم بشدة لكل من يبحث عن مستقبل مالي أفضل."</p>
+                            <div class="flex items-center">
+                                <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20businessman%20portrait%2C%20confident%2C%20modern%2C%20neutral%20background%2C%20professional%20headshot&width=60&height=60&seq=7&orientation=squarish" alt="م. فيصل العتيبي" class="w-12 h-12 rounded-full object-cover object-top">
+                                <div class="mr-3">
+                                    <h4 class="font-bold">م. فيصل العتيبي</h4>
+                                    <p class="text-gray-600 text-sm">مهندس معماري</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item px-4">
+                        <div class="bg-gray-50 p-8 rounded shadow-sm">
+                            <div class="flex items-center mb-4">
+                                <div class="text-primary">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">"كنت أعاني من ديون متراكمة ولم أكن أعرف من أين أبدأ. بعد جلسة استشارية مع المستشار المالي، تمكنت من وضع خطة واضحة لسداد الديون وبدأت بالفعل في تنفيذها. الآن أشعر براحة كبيرة وأمل في مستقبل مالي أفضل."</p>
+                            <div class="flex items-center">
+                                <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20businesswoman%20portrait%2C%20confident%2C%20modern%2C%20neutral%20background%2C%20professional%20headshot&width=60&height=60&seq=8&orientation=squarish" alt="د. لمياء الشمري" class="w-12 h-12 rounded-full object-cover object-top">
+                                <div class="mr-3">
+                                    <h4 class="font-bold">د. لمياء الشمري</h4>
+                                    <p class="text-gray-600 text-sm">طبيبة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item px-4">
+                        <div class="bg-gray-50 p-8 rounded shadow-sm">
+                            <div class="flex items-center mb-4">
+                                <div class="text-primary">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">"كنت متردداً في البداية، لكن بعد التعامل مع فريق المستشار المالي، أدركت قيمة الاستشارة المالية المتخصصة. ساعدوني في إعادة هيكلة شركتي الناشئة ماليًا، مما أدى إلى تحسن كبير في الأداء المالي خلال فترة قصيرة."</p>
+                            <div class="flex items-center">
+                                <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20businessman%20portrait%2C%20confident%2C%20modern%2C%20neutral%20background%2C%20professional%20headshot&width=60&height=60&seq=9&orientation=squarish" alt="أ. عبدالله المنصور" class="w-12 h-12 rounded-full object-cover object-top">
+                                <div class="mr-3">
+                                    <h4 class="font-bold">أ. عبدالله المنصور</h4>
+                                    <p class="text-gray-600 text-sm">رائد أعمال</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center text-primary z-10" id="prev-testimonial">
+                    <i class="ri-arrow-left-s-line ri-lg"></i>
+                </button>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center text-primary z-10" id="next-testimonial">
+                    <i class="ri-arrow-right-s-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Section -->
+    <section id="booking" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">احجز استشارتك الآن</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">اختر الخدمة المناسبة لاحتياجاتك وحدد موعدًا مع أحد مستشارينا المتخصصين.</p>
+            </div>
+            <div class="bg-white p-8 rounded shadow-sm max-w-4xl mx-auto">
+                <div class="mb-8">
+                    <div class="flex border-b">
+                        <button class="tab-active px-6 py-3 font-medium focus:outline-none" data-tab="service">1. اختيار الخدمة</button>
+                        <button class="px-6 py-3 font-medium text-gray-500 focus:outline-none" data-tab="advisor">2. اختيار المستشار</button>
+                        <button class="px-6 py-3 font-medium text-gray-500 focus:outline-none" data-tab="date">3. تحديد الموعد</button>
+                        <button class="px-6 py-3 font-medium text-gray-500 focus:outline-none" data-tab="info">4. بياناتك الشخصية</button>
+                    </div>
+                </div>
+                
+                <div id="service-tab" class="tab-content">
+                    <h3 class="text-xl font-bold mb-6">اختر نوع الخدمة</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <label class="custom-checkbox border border-gray-200 p-4 rounded cursor-pointer hover:border-primary">
+                            <input type="radio" name="service" value="personal">
+                            <span class="checkmark"></span>
+                            <div class="mr-8">
+                                <h4 class="font-bold">التخطيط المالي الشخصي</h4>
+                                <p class="text-gray-600 text-sm">خطة مالية شخصية مخصصة لتحقيق أهدافك</p>
+                            </div>
+                        </label>
+                        <label class="custom-checkbox border border-gray-200 p-4 rounded cursor-pointer hover:border-primary">
+                            <input type="radio" name="service" value="investment">
+                            <span class="checkmark"></span>
+                            <div class="mr-8">
+                                <h4 class="font-bold">استشارات استثمارية</h4>
+                                <p class="text-gray-600 text-sm">تحليل وتوجيه لاستثماراتك الحالية والمستقبلية</p>
+                            </div>
+                        </label>
+                        <label class="custom-checkbox border border-gray-200 p-4 rounded cursor-pointer hover:border-primary">
+                            <input type="radio" name="service" value="debt">
+                            <span class="checkmark"></span>
+                            <div class="mr-8">
+                                <h4 class="font-bold">إدارة الديون</h4>
+                                <p class="text-gray-600 text-sm">استراتيجيات لإدارة وسداد الديون بفعالية</p>
+                            </div>
+                        </label>
+                        <label class="custom-checkbox border border-gray-200 p-4 rounded cursor-pointer hover:border-primary">
+                            <input type="radio" name="service" value="business">
+                            <span class="checkmark"></span>
+                            <div class="mr-8">
+                                <h4 class="font-bold">استشارات الشركات</h4>
+                                <p class="text-gray-600 text-sm">حلول مالية للشركات الناشئة والقائمة</p>
+                            </div>
+                        </label>
+                        <label class="custom-checkbox border border-gray-200 p-4 rounded cursor-pointer hover:border-primary">
+                            <input type="radio" name="service" value="retirement">
+                            <span class="checkmark"></span>
+                            <div class="mr-8">
+                                <h4 class="font-bold">التخطيط للتقاعد</h4>
+                                <p class="text-gray-600 text-sm">خطط تقاعد تضمن لك مستقبلًا ماليًا مستقرًا</p>
+                            </div>
+                        </label>
+                        <label class="custom-checkbox border border-gray-200 p-4 rounded cursor-pointer hover:border-primary">
+                            <input type="radio" name="service" value="estate">
+                            <span class="checkmark"></span>
+                            <div class="mr-8">
+                                <h4 class="font-bold">التخطيط العقاري والميراث</h4>
+                                <p class="text-gray-600 text-sm">إدارة الثروات وانتقالها بين الأجيال</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="mt-8 flex justify-end">
+                        <button class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap next-tab" data-next="advisor">التالي</button>
+                    </div>
+                </div>
+                
+                <div id="advisor-tab" class="tab-content hidden">
+                    <h3 class="text-xl font-bold mb-6">اختر المستشار المناسب</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <label class="custom-checkbox border border-gray-200 p-4 rounded cursor-pointer hover:border-primary">
+                            <input type="radio" name="advisor" value="ahmed">
+                            <span class="checkmark"></span>
+                            <div class="flex mr-8">
+                                <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20male%20financial%20advisor%20in%20business%20suit%2C%20confident%20pose%2C%20professional%20headshot%2C%20neutral%20background%2C%20high%20quality%20portrait&width=60&height=60&seq=10&orientation=squarish" alt="د. أحمد العمري" class="w-12 h-12 rounded-full object-cover object-top">
+                                <div class="mr-3">
+                                    <h4 class="font-bold">د. أحمد العمري</h4>
+                                    <p class="text-gray-600 text-sm">المدير التنفيذي</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="custom-checkbox border border-gray-200 p-4 rounded cursor-pointer hover:border-primary">
+                            <input type="radio" name="advisor" value="sara">
+                            <span class="checkmark"></span>
+                            <div class="flex mr-8">
+                                <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20female%20financial%20advisor%20in%20business%20attire%2C%20confident%20pose%2C%20professional%20headshot%2C%20neutral%20background%2C%20high%20quality%20portrait&width=60&height=60&seq=11&orientation=squarish" alt="م. سارة الحميد" class="w-12 h-12 rounded-full object-cover object-top">
+                                <div class="mr-3">
+                                    <h4 class="font-bold">م. سارة الحميد</h4>
+                                    <p class="text-gray-600 text-sm">رئيس قسم الاستثمار</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="custom-checkbox border border-gray-200 p-4 rounded cursor-pointer hover:border-primary">
+                            <input type="radio" name="advisor" value="mohammed">
+                            <span class="checkmark"></span>
+                            <div class="flex mr-8">
+                                <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20male%20financial%20advisor%20in%20business%20suit%2C%20confident%20pose%2C%20professional%20headshot%2C%20neutral%20background%2C%20high%20quality%20portrait&width=60&height=60&seq=12&orientation=squarish" alt="أ. محمد القحطاني" class="w-12 h-12 rounded-full object-cover object-top">
+                                <div class="mr-3">
+                                    <h4 class="font-bold">أ. محمد القحطاني</h4>
+                                    <p class="text-gray-600 text-sm">مستشار التخطيط المالي</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="custom-checkbox border border-gray-200 p-4 rounded cursor-pointer hover:border-primary">
+                            <input type="radio" name="advisor" value="noura">
+                            <span class="checkmark"></span>
+                            <div class="flex mr-8">
+                                <img src="https://readdy.ai/api/search-image?query=professional%20middle%20eastern%20female%20financial%20advisor%20in%20business%20attire%2C%20confident%20pose%2C%20professional%20headshot%2C%20neutral%20background%2C%20high%20quality%20portrait&width=60&height=60&seq=13&orientation=squarish" alt="د. نورة السالم" class="w-12 h-12 rounded-full object-cover object-top">
+                                <div class="mr-3">
+                                    <h4 class="font-bold">د. نورة السالم</h4>
+                                    <p class="text-gray-600 text-sm">مستشار الشركات</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="mt-8 flex justify-between">
+                        <button class="border border-primary text-primary px-6 py-2 !rounded-button font-medium hover:bg-primary hover:bg-opacity-10 transition duration-300 whitespace-nowrap prev-tab" data-prev="service">السابق</button>
+                        <button class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap next-tab" data-next="date">التالي</button>
+                    </div>
+                </div>
+                
+                <div id="date-tab" class="tab-content hidden">
+                    <h3 class="text-xl font-bold mb-6">اختر التاريخ والوقت المناسب</h3>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-medium mb-2">التاريخ</label>
+                        <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary text-sm" min="2025-05-09">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-medium mb-2">الوقت المتاح</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <label class="custom-checkbox border border-gray-200 p-3 rounded text-center cursor-pointer hover:border-primary">
+                                <input type="radio" name="time" value="09:00">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">09:00 صباحًا</div>
+                            </label>
+                            <label class="custom-checkbox border border-gray-200 p-3 rounded text-center cursor-pointer hover:border-primary">
+                                <input type="radio" name="time" value="10:30">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">10:30 صباحًا</div>
+                            </label>
+                            <label class="custom-checkbox border border-gray-200 p-3 rounded text-center cursor-pointer hover:border-primary">
+                                <input type="radio" name="time" value="12:00">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">12:00 ظهرًا</div>
+                            </label>
+                            <label class="custom-checkbox border border-gray-200 p-3 rounded text-center cursor-pointer hover:border-primary">
+                                <input type="radio" name="time" value="13:30">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">01:30 ظهرًا</div>
+                            </label>
+                            <label class="custom-checkbox border border-gray-200 p-3 rounded text-center cursor-pointer hover:border-primary">
+                                <input type="radio" name="time" value="15:00">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">03:00 عصرًا</div>
+                            </label>
+                            <label class="custom-checkbox border border-gray-200 p-3 rounded text-center cursor-pointer hover:border-primary">
+                                <input type="radio" name="time" value="16:30">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">04:30 عصرًا</div>
+                            </label>
+                            <label class="custom-checkbox border border-gray-200 p-3 rounded text-center cursor-pointer hover:border-primary">
+                                <input type="radio" name="time" value="18:00">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">06:00 مساءً</div>
+                            </label>
+                            <label class="custom-checkbox border border-gray-200 p-3 rounded text-center cursor-pointer hover:border-primary">
+                                <input type="radio" name="time" value="19:30">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">07:30 مساءً</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-medium mb-2">نوع الاستشارة</label>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="custom-checkbox flex items-center cursor-pointer">
+                                <input type="radio" name="consultation-type" value="online">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">
+                                    <div class="flex items-center">
+                                        <i class="ri-video-chat-line text-primary mr-2"></i>
+                                        <span>استشارة عبر الإنترنت</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="custom-checkbox flex items-center cursor-pointer">
+                                <input type="radio" name="consultation-type" value="office">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">
+                                    <div class="flex items-center">
+                                        <i class="ri-building-line text-primary mr-2"></i>
+                                        <span>استشارة في المكتب</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="custom-checkbox flex items-center cursor-pointer">
+                                <input type="radio" name="consultation-type" value="phone">
+                                <span class="checkmark"></span>
+                                <div class="mr-6">
+                                    <div class="flex items-center">
+                                        <i class="ri-phone-line text-primary mr-2"></i>
+                                        <span>استشارة هاتفية</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex justify-between">
+                        <button class="border border-primary text-primary px-6 py-2 !rounded-button font-medium hover:bg-primary hover:bg-opacity-10 transition duration-300 whitespace-nowrap prev-tab" data-prev="advisor">السابق</button>
+                        <button class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap next-tab" data-next="info">التالي</button>
+                    </div>
+                </div>
+                
+                <div id="info-tab" class="tab-content hidden">
+                    <h3 class="text-xl font-bold mb-6">أدخل بياناتك الشخصية</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">الاسم الكامل</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="أدخل اسمك الكامل">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">البريد الإلكتروني</label>
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="example@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">رقم الهاتف</label>
+                            <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="05xxxxxxxx">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">العمر</label>
+                            <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="أدخل عمرك">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-medium mb-2">ملاحظات إضافية (اختياري)</label>
+                        <textarea class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary h-32" placeholder="أضف أي معلومات إضافية قد تساعد المستشار"></textarea>
+                    </div>
+                    <div class="mb-6">
+                        <label class="custom-checkbox flex items-start cursor-pointer">
+                            <input type="checkbox" name="terms">
+                            <span class="checkmark mt-1"></span>
+                            <div class="mr-6 text-sm text-gray-600">
+                                أوافق على <a href="#" class="text-primary hover:underline">شروط الخدمة</a> و<a href="#" class="text-primary hover:underline">سياسة الخصوصية</a>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="mt-8 flex justify-between">
+                        <button class="border border-primary text-primary px-6 py-2 !rounded-button font-medium hover:bg-primary hover:bg-opacity-10 transition duration-300 whitespace-nowrap prev-tab" data-prev="date">السابق</button>
+                        <button class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">تأكيد الحجز</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">المدونة المالية</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">آخر المقالات والنصائح المالية لمساعدتك على اتخاذ قرارات مالية أفضل.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="blog-card bg-gray-50 rounded overflow-hidden shadow-sm transition duration-300">
+                    <img src="https://readdy.ai/api/search-image?query=person%20planning%20budget%2C%20financial%20planning%2C%20calculator%2C%20papers%2C%20charts%2C%20laptop%2C%20modern%20office%20setting%2C%20high%20quality%20professional%20image&width=600&height=400&seq=14&orientation=landscape" alt="كيفية إعداد ميزانية شخصية فعالة" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="flex items-center">
+                                <i class="ri-calendar-line mr-1"></i>
+                                8 مايو 2025
+                            </span>
+                            <span class="mx-2">|</span>
+                            <span class="flex items-center">
+                                <i class="ri-user-line mr-1"></i>
+                                م. سارة الحميد
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">كيفية إعداد ميزانية شخصية فعالة</h3>
+                        <p class="text-gray-600 mb-4">تعرف على الخطوات العملية لإعداد ميزانية شخصية تساعدك على تحقيق أهدافك المالية وتجنب الإنفاق الزائد.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                            اقرأ المزيد
+                            <i class="ri-arrow-left-line mr-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-card bg-gray-50 rounded overflow-hidden shadow-sm transition duration-300">
+                    <img src="https://readdy.ai/api/search-image?query=stock%20market%20investment%2C%20financial%20charts%2C%20investor%20analyzing%20data%2C%20trading%20screen%2C%20professional%20setting%2C%20high%20quality%20professional%20image&width=600&height=400&seq=15&orientation=landscape" alt="أخطاء شائعة في الاستثمار وكيفية تجنبها" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="flex items-center">
+                                <i class="ri-calendar-line mr-1"></i>
+                                5 مايو 2025
+                            </span>
+                            <span class="mx-2">|</span>
+                            <span class="flex items-center">
+                                <i class="ri-user-line mr-1"></i>
+                                د. أحمد العمري
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">أخطاء شائعة في الاستثمار وكيفية تجنبها</h3>
+                        <p class="text-gray-600 mb-4">استعراض لأكثر الأخطاء شيوعًا التي يقع فيها المستثمرون المبتدئون والمتمرسون، مع نصائح عملية لتجنبها.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                            اقرأ المزيد
+                            <i class="ri-arrow-left-line mr-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-card bg-gray-50 rounded overflow-hidden shadow-sm transition duration-300">
+                    <img src="https://readdy.ai/api/search-image?query=retirement%20planning%2C%20elderly%20couple%20reviewing%20financial%20documents%2C%20happy%20retirement%2C%20planning%20future%2C%20professional%20setting%2C%20high%20quality%20professional%20image&width=600&height=400&seq=16&orientation=landscape" alt="التخطيط للتقاعد: متى يجب أن تبدأ؟" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span class="flex items-center">
+                                <i class="ri-calendar-line mr-1"></i>
+                                1 مايو 2025
+                            </span>
+                            <span class="mx-2">|</span>
+                            <span class="flex items-center">
+                                <i class="ri-user-line mr-1"></i>
+                                أ. محمد القحطاني
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">التخطيط للتقاعد: متى يجب أن تبدأ؟</h3>
+                        <p class="text-gray-600 mb-4">دليل شامل حول أهمية البدء المبكر في التخطيط للتقاعد، مع استراتيجيات عملية لبناء ثروة تقاعدية مناسبة.</p>
+                        <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                            اقرأ المزيد
+                            <i class="ri-arrow-left-line mr-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-white border border-primary text-primary px-8 py-3 !rounded-button font-medium hover:bg-primary hover:text-white transition duration-300 whitespace-nowrap">عرض جميع المقالات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary bg-opacity-5">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-primary mb-4">اشترك في نشرتنا البريدية</h2>
+                <p class="text-gray-600 mb-8">احصل على أحدث النصائح المالية والعروض الحصرية مباشرة إلى بريدك الإلكتروني.</p>
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" class="flex-1 px-4 py-3 border border-gray-300 rounded-button focus:border-primary" placeholder="أدخل بريدك الإلكتروني">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">اشترك الآن</button>
+                </form>
+                <p class="text-sm text-gray-500 mt-4">لن نشارك بريدك الإلكتروني مع أي جهة أخرى. يمكنك إلغاء الاشتراك في أي وقت.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">تواصل معنا</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نحن هنا للإجابة على استفساراتك. يمكنك التواصل معنا من خلال النموذج أدناه أو عبر معلومات الاتصال المباشرة.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="w-full lg:w-1/2">
+                    <form class="bg-gray-50 p-8 rounded shadow-sm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">الاسم</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="أدخل اسمك">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">البريد الإلكتروني</label>
+                                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="example@example.com">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2">الموضوع</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="موضوع الرسالة">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2">الرسالة</label>
+                            <textarea class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary h-32" placeholder="اكتب رسالتك هنا..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">إرسال الرسالة</button>
+                    </form>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <div class="h-64 mb-8 rounded overflow-hidden">
+                        <img src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png" alt="موقعنا" class="w-full h-full object-cover">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">معلومات الاتصال</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary mt-1">
+                                        <i class="ri-map-pin-line"></i>
+                                    </div>
+                                    <span class="mr-3 text-gray-700">شارع الملك فهد، برج المملكة، الطابق 20، الرياض، المملكة العربية السعودية</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-phone-line"></i>
+                                    </div>
+                                    <span class="mr-3 text-gray-700">+966 11 234 5678</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                        <i class="ri-mail-line"></i>
+                                    </div>
+                                    <span class="mr-3 text-gray-700">info@almostachar.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">ساعات العمل</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span class="text-gray-700">الأحد - الخميس:</span>
+                                    <span class="text-gray-700">9:00 ص - 8:00 م</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-700">الجمعة:</span>
+                                    <span class="text-gray-700">مغلق</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-700">السبت:</span>
+                                    <span class="text-gray-700">10:00 ص - 3:00 م</span>
+                                </li>
+                            </ul>
+                            <div class="mt-6">
+                                <h3 class="text-xl font-bold mb-4">تابعنا</h3>
+                                <div class="flex space-x-4 space-x-reverse">
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary hover:bg-opacity-20 transition duration-300">
+                                        <i class="ri-twitter-fill"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary hover:bg-opacity-20 transition duration-300">
+                                        <i class="ri-linkedin-fill"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary hover:bg-opacity-20 transition duration-300">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary hover:bg-opacity-20 transition duration-300">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <a href="#" class="text-3xl font-['Pacifico'] text-white mb-4 block">logo</a>
+                    <p class="text-white text-opacity-80 mb-6">شركة استشارات مالية رائدة تقدم حلولًا مالية مبتكرة للأفراد والشركات منذ عام 2010.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-8 h-8 flex items-center justify-center text-white text-opacity-80 hover:text-opacity-100">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center text-white text-opacity-80 hover:text-opacity-100">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center text-white text-opacity-80 hover:text-opacity-100">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center text-white text-opacity-80 hover:text-opacity-100">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white text-opacity-80 hover:text-opacity-100">الرئيسية</a></li>
+                        <li><a href="#about" class="text-white text-opacity-80 hover:text-opacity-100">من نحن</a></li>
+                        <li><a href="#services" class="text-white text-opacity-80 hover:text-opacity-100">خدماتنا</a></li>
+                        <li><a href="#team" class="text-white text-opacity-80 hover:text-opacity-100">فريقنا</a></li>
+                        <li><a href="#blog" class="text-white text-opacity-80 hover:text-opacity-100">المدونة</a></li>
+                        <li><a href="#contact" class="text-white text-opacity-80 hover:text-opacity-100">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white text-opacity-80 hover:text-opacity-100">التخطيط المالي الشخصي</a></li>
+                        <li><a href="#" class="text-white text-opacity-80 hover:text-opacity-100">استشارات استثمارية</a></li>
+                        <li><a href="#" class="text-white text-opacity-80 hover:text-opacity-100">إدارة الديون</a></li>
+                        <li><a href="#" class="text-white text-opacity-80 hover:text-opacity-100">استشارات الشركات</a></li>
+                        <li><a href="#" class="text-white text-opacity-80 hover:text-opacity-100">التخطيط للتقاعد</a></li>
+                        <li><a href="#" class="text-white text-opacity-80 hover:text-opacity-100">التخطيط العقاري والميراث</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">النشرة البريدية</h3>
+                    <p class="text-white text-opacity-80 mb-4">اشترك في نشرتنا البريدية للحصول على أحدث النصائح المالية.</p>
+                    <form class="mb-4">
+                        <div class="flex">
+                            <input type="email" class="flex-1 px-4 py-2 rounded-r-button border-none text-gray-800 text-sm" placeholder="بريدك الإلكتروني">
+                            <button type="submit" class="bg-white text-primary px-4 py-2 !rounded-l-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">اشترك</button>
+                        </div>
+                    </form>
+                    <div class="flex items-center space-x-2 space-x-reverse">
+                        <span class="text-white text-opacity-80">وسائل الدفع:</span>
+                        <i class="ri-visa-fill text-xl"></i>
+                        <i class="ri-mastercard-fill text-xl"></i>
+                        <i class="ri-paypal-fill text-xl"></i>
+                        <i class="ri-apple-fill text-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center">
+                <p class="text-white text-opacity-80">&copy; 2025 المستشار المالي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Booking Tabs
+            const tabButtons = document.querySelectorAll('[data-tab]');
+            const tabContents = document.querySelectorAll('.tab-content');
+            const nextButtons = document.querySelectorAll('.next-tab');
+            const prevButtons = document.querySelectorAll('.prev-tab');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabName = this.getAttribute('data-tab');
+                    
+                    // Hide all tabs
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+                    
+                    // Show selected tab
+                    document.getElementById(tabName + '-tab').classList.remove('hidden');
+                    
+                    // Update active tab button
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('tab-active');
+                        btn.classList.add('text-gray-500');
+                    });
+                    
+                    this.classList.add('tab-active');
+                    this.classList.remove('text-gray-500');
+                });
+            });
+            
+            nextButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const nextTab = this.getAttribute('data-next');
+                    
+                    // Hide all tabs
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+                    
+                    // Show next tab
+                    document.getElementById(nextTab + '-tab').classList.remove('hidden');
+                    
+                    // Update active tab button
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('tab-active');
+                        btn.classList.add('text-gray-500');
+                        
+                        if(btn.getAttribute('data-tab') === nextTab) {
+                            btn.classList.add('tab-active');
+                            btn.classList.remove('text-gray-500');
+                        }
+                    });
+                });
+            });
+            
+            prevButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const prevTab = this.getAttribute('data-prev');
+                    
+                    // Hide all tabs
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+                    
+                    // Show previous tab
+                    document.getElementById(prevTab + '-tab').classList.remove('hidden');
+                    
+                    // Update active tab button
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('tab-active');
+                        btn.classList.add('text-gray-500');
+                        
+                        if(btn.getAttribute('data-tab') === prevTab) {
+                            btn.classList.add('tab-active');
+                            btn.classList.remove('text-gray-500');
+                        }
+                    });
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Testimonial Slider
+            const track = document.querySelector('.testimonial-track');
+            const items = document.querySelectorAll('.testimonial-item');
+            const prevButton = document.getElementById('prev-testimonial');
+            const nextButton = document.getElementById('next-testimonial');
+            let currentIndex = 0;
+            
+            function updateSlider() {
+                const itemWidth = items[0].offsetWidth;
+                track.style.transform = `translateX(${currentIndex * -itemWidth}px)`;
+            }
+            
+            prevButton.addEventListener('click', function() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSlider();
+                }
+            });
+            
+            nextButton.addEventListener('click', function() {
+                if (currentIndex < items.length - 1) {
+                    currentIndex++;
+                    updateSlider();
+                }
+            });
+            
+            // Initialize slider
+            updateSlider();
+            
+            // Update slider on window resize
+            window.addEventListener('resize', updateSlider);
+        });
+    </script>
+</body>
+</html>
